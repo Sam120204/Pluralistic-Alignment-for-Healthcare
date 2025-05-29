@@ -1,53 +1,42 @@
 # Pluralistic-Alignment-for-Healthcare
 
-This repository contains code and scripts for our ACL 2025 submission:
-**"Pluralistic Alignment for Healthcare: A Role-Driven Framework"**.
+## Pluralistic Alignment for Healthcare: A Role-Driven Framework
 
-We propose **ETHOSAGENTS**, a lightweight, generalizable framework for pluralistic alignment in healthcare, leveraging structured persona simulation to generate ethically diverse responses across three alignment modes:
+This repository supports our research paper titled *Pluralistic Alignment for Healthcare: A Role-Driven Framework*. It explores how AI systems can generate diverse moral commentary in clinical and health-related scenarios by simulating perspectives derived from contrasting stakeholder roles and ethical viewpoints.
 
-* **Overton**: freeform multi-perspective reasoning,
-* **Steerable**: conditioned generation from chosen personas,
-* **Distributional**: population-aligned distribution modeling.
+## Overview
 
-## Paper
+We introduce a two-stage framework:
 
-You can find our paper [here (ACL submission)](./7854_Pluralistic_Alignment_for.pdf). ETHOSAGENTS outperforms prior baselines (e.g., Modular Pluralism, MoE) across all three alignment tasks on the [VITAL dataset](https://github.com/anudeex/VITAL/tree/main/dataset).
+1. **Perspective Generation**: Automatically generate diverse ethical perspectives using a dedicated persona prompt schema.
+2. **Comment Generation**: Each perspective is used to generate a detailed moral comment for a given medical or ethical question.
 
-## File Structure
+The framework supports scenarios from three core alignment settings:
 
-| Script                                                | Description                                                        |
-| ----------------------------------------------------- | ------------------------------------------------------------------ |
-| `generate_distributional_comments_moral_scenarios.py` | Distributional generation for moral dilemmas                       |
-| `generate_distributional_comments_poll_questions.py`  | Distributional generation for public opinion poll questions        |
-| `generate_overton_comments.py`                        | Overton-style comment generation (multi-perspective summarization) |
-| `generate_steerable_comments_generate.py`             | Steerable generation conditioned on persona                        |
-| `generate_steerable_comments_probability.py`          | Steerable generation with soft persona selection                   |
+* **Overton** (multi-perspective summarization)
+* **Steerable** (persona-conditioned generation)
+* **Distributional** (population-aligned generation)
 
-Each script supports multiprocessing, resume-from-checkpoint, and dynamic persona conditioning.
+## Datasets
 
-## Dataset
+We utilize examples and formats based on the [VITAL dataset](https://github.com/anudeex/VITAL/tree/main/dataset). Please refer to the original repository for access to the JSON files and schema.
 
-We use the [VITAL benchmark](https://github.com/anudeex/VITAL/tree/main/dataset), a pluralism-focused dataset designed for health-related moral alignment. It covers:
+## Comment Combination Strategy
 
-* Overton (n=1,649)
-* Steerable (n=15,340)
-* Distributional (n=1,857)
+To aggregate generated comments into a final structured output, we adopt a modular pluralism technique inspired by the implementation in [Modular Pluralism](https://github.com/BunsenFeng/modular_pluralism/tree/main). This allows for filtered and structured integration of diverse responses based on coherence and representation metrics.
 
-## Related Tools
+## Scripts
 
-For distributional alignment and comment merging, we build on ideas from [Modular Pluralism](https://github.com/BunsenFeng/modular_pluralism/tree/main). Our approach differs by avoiding fine-tuned submodels, instead generating diverse perspectives on-the-fly.
+* `generate_overton_comments.py`: Generates multi-perspective Overton-style summaries.
+* `generate_steerable_comments_generate.py`: Generates steerable comments based on fixed personas.
+* `generate_steerable_comments_probability.py`: Generates steerable comments based on probabilistic persona weighting.
+* `generate_distributional_comments_moral_scenarios.py`: Generates distributional moral comments for VITAL moral choice scenarios.
+* `generate_distributional_comments_poll_questions.py`: Generates distributional comments for Global OpinionQA-style questions.
 
 ## Citation
 
-```bibtex
-@inproceedings{ethosagents2025,
-  title={Pluralistic Alignment for Healthcare: A Role-Driven Framework},
-  author={Anonymous},
-  booktitle={ACL},
-  year={2025}
-}
-```
+*Citation details will be updated upon publication.*
 
-## Contact
+---
 
-For questions, reach out via GitHub Issues or connect with the authors after acceptance.
+For questions or collaborations, please contact the authors listed in the paper.
