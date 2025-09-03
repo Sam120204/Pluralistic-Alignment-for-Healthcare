@@ -16,18 +16,13 @@ This repository supports our research paper titled *Pluralistic Alignment for He
 
 <div align="center">
 
-<table>
-  <tr>
-    <td align="center">
-      <img width="400" alt="Pluralistic alignment example" src="https://github.com/user-attachments/assets/6c0f31f1-467b-42ef-b515-2364da754378" />
-      <p><strong>An illustration of different pluralistic alignment modes for a multi-opinionated health scenario</strong></p>
-    </td>
-    <td align="center">
-      <img width="400" alt="Overview of alignment datasets" src="https://github.com/user-attachments/assets/39c2937c-6cec-456a-a2d0-dd664f68d9fa" />
-      <p><strong>Overview of ETHOSAGENTS</strong></p>
-    </td>
-  </tr>
-</table>
+<img width="800" alt="Pluralistic alignment example" src="https://github.com/user-attachments/assets/6c0f31f1-467b-42ef-b515-2364da754378" />
+<p><strong>An illustration of different pluralistic alignment modes for a multi-opinionated health scenario</strong></p>
+
+<br />
+
+<img width="600" alt="Overview of alignment datasets" src="https://github.com/user-attachments/assets/39c2937c-6cec-456a-a2d0-dd664f68d9fa" />
+<p><strong>Overview of ETHOSAGENTS</strong></p>
 
 </div>
 
