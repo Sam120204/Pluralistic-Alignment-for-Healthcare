@@ -4,7 +4,7 @@ This repository supports our research paper titled *Pluralistic Alignment for He
 
 <br />
 
-We introduce a two-stage framework (ETHOSAGENTS):
+We introduce a two-stage framework (**ETHOSAGENTS**):
 
 1. **Seed Persona Generation**: Automatically generate diverse ethical perspectives using a dedicated persona prompt schema.
 2. **Perspective Generation**: Each perspective is used to generate a detailed moral comment for a given medical or ethical question.
