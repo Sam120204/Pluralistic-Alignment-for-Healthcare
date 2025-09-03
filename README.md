@@ -1,21 +1,40 @@
-# Pluralistic-Alignment-for-Healthcare
+# Pluralistic Alignment for Healthcare: A Role-Driven Framework
 
-## Pluralistic Alignment for Healthcare: A Role-Driven Framework
+This repository supports our research paper titled *Pluralistic Alignment for Healthcare: A Role-Driven Framework*. (In Proceedings of EMNLP 2025 MainConference).
 
-This repository supports our research paper titled *Pluralistic Alignment for Healthcare: A Role-Driven Framework*. It explores how AI systems can generate diverse moral commentary in clinical and health-related scenarios by simulating perspectives derived from contrasting stakeholder roles and ethical viewpoints.
+<br />
 
-## Overview
+We introduce a two-stage framework (**ETHOSAGENTS**):
 
-We introduce a two-stage framework:
+1. **Seed Persona Generation**: Automatically generate diverse ethical perspectives using a dedicated persona prompt schema.
+2. **Perspective Generation**: Each perspective is used to generate a detailed moral comment for a given medical or ethical question.
+3. **Pluralistic Alignment**: Aggregate and align the generated perspectives to produce balanced, multi-viewpoint responses that respect diverse stakeholder values.
+   
+   The framework supports scenarios from three core alignment settings:
+   - **Overton** (multi-perspective summarization)
+   - **Steerable** (persona-conditioned generation)
+   - **Distributional** (population-aligned generation)
 
-1. **Perspective Generation**: Automatically generate diverse ethical perspectives using a dedicated persona prompt schema.
-2. **Comment Generation**: Each perspective is used to generate a detailed moral comment for a given medical or ethical question.
 
-The framework supports scenarios from three core alignment settings:
+<br />
 
-* **Overton** (multi-perspective summarization)
-* **Steerable** (persona-conditioned generation)
-* **Distributional** (population-aligned generation)
+<div align="center">
+
+<img width="800" alt="Pluralistic alignment example" src="https://github.com/user-attachments/assets/6c0f31f1-467b-42ef-b515-2364da754378" />
+<p><strong>Overview of ETHOSAGENTS</strong></p>
+<br />
+
+<img width="600" alt="Overview of alignment datasets" src="https://github.com/user-attachments/assets/39c2937c-6cec-456a-a2d0-dd664f68d9fa" />
+<p><strong>An illustration of different pluralistic alignment modes for a multi-opinionated health scenario</strong></p>
+</div>
+
+<br />
+
+
+## Abstract
+
+As large language models are increasingly deployed in sensitive domains such as healthcare, ensuring their outputs reflect the diverse values and perspectives held across populations is critical. However, existing alignment approaches, including pluralistic paradigms like Modular Pluralism, often fall short in the health domain, where personal, cultural, and situational factors shape pluralism. Motivated by the aforementioned healthcare challenges, we propose a first lightweight, generalizable, pluralistic alignment approach, ETHOSAGENTS, designed to simulate diverse perspectives and values. We empirically show that it advances the pluralistic alignment for all three modes across seven varying-sized open and closed models. Our findings reveal that health-related pluralism demands adaptable and normatively aware approaches, offering insights into how these models can better respect diversity in other high-stakes domains.
+
 
 ## Datasets
 
