@@ -54,7 +54,32 @@ To aggregate generated comments into a final structured output, we adopt a modul
 
 ## Citation
 
-*Citation details will be updated upon publication.*
+If you find this work useful, please cite our paper:
+
+```bibtex
+@inproceedings{zhong-etal-2025-pluralistic,
+    title = "Pluralistic Alignment for Healthcare: A Role-Driven Framework",
+    author = "Zhong, Jiayou  and
+      Shetty, Anudeex  and
+      Jia, Chao  and
+      Lin, Xuanrui  and
+      Naseem, Usman",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.1596/",
+    pages = "31308--31331",
+    ISBN = "979-8-89176-332-6",
+    abstract = "As large language models are increasingly deployed in sensitive domains such as healthcare, ensuring their outputs reflect the diverse values and perspectives held across populations is critical. However, existing alignment approaches, including pluralistic paradigms like Modular Pluralism, often fall short in the health domain, where personal, cultural, and situational factors shape pluralism. Motivated by the aforementioned healthcare challenges, we propose a first lightweight, generalizable, pluralistic alignment approach, ETHOSAGENTS, designed to simulate diverse perspectives and values. We empirically show that it advances the pluralistic alignment for all three modes across seven varying-sized open and closed models. Our findings reveal that health-related pluralism demands adaptable and normatively aware approaches, offering insights into how these models can better respect diversity in other high-stakes domains."
+}
+```
+
 
 ---
 
